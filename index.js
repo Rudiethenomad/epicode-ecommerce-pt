@@ -14,6 +14,6 @@ const fetchData = async () => {
         console.log(error);
 
     }
-
+    fetchData();
 };
 fetchData();
