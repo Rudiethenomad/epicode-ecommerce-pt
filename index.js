@@ -1,3 +1,4 @@
+
 const fetchData = async () => {
 
     try {
@@ -15,5 +16,4 @@ const fetchData = async () => {
     }
 
 };
-
-fetchData()
+fetchData();
