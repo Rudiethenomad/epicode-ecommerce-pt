@@ -1,14 +1,19 @@
-$(function(){
-    loadScript()
-})
+const fetchData = async () => {
 
-function loadScript (url, callback) {
-    let head = document.head
-    let script = document.createElement("script")
-    script.type = "text/javascript"
-    script.src = url
-    script.onreadystatechange = callback
-    script.onload = callback
-    head.appendChild (script)
+    try {
 
-}
+        const response = await fetch('https://dummyjson.com/products');
+
+        const data = await response.json();
+
+        console.log(data);
+
+    } catch (error) {
+
+        console.log(error);
+
+    }
+
+};
+
+fetchData()
