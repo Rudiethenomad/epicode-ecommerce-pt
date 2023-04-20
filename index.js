@@ -8,3 +8,7 @@ fetch('https://dummyjson.com/products')
 
 }
 getProducts()
+
+function listProducts(productsPage){
+    document.getElementById('products-list');
+}
