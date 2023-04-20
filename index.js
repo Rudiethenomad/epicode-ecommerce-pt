@@ -1,19 +1,10 @@
 
-const fetchData = async () => {
+function getProducts() {
+fetch('https://dummyjson.com/products')
 
-    try {
+    .then(response => response.json())
 
-        const response = await fetch('https://dummyjson.com/products');
+    .then(data => console.log(data));
 
-        const data = await response.json();
-
-        console.log(data);
-
-    } catch (error) {
-
-        console.log(error);
-
-    }
-    fetchData();
-};
-fetchData();
+}
+getProducts()
