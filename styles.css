@@ -1,5 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
- *,
+
+
+body{
+    margin-top: 30px;
+ }
+
+
+
+ /*shopping cart*/
+ .card{
+     height: 250px;
+ }
+p{
+         font-family: 'Open Sans';
+         font-weight: 600;
+         color: #202020;
+     }
+
+
+     /*Card Deck*/
+
+     .card{
+         height: 500px;
+         width: 250px;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*,
  *::before,
  *::after {
      margin: 0;
@@ -84,3 +131,4 @@
  .add-to-cart ion-icon {
      font-size: 3rem;
  }
+ */
