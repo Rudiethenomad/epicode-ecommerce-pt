@@ -31,6 +31,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2rem;
+  
 }
 
 .product {
@@ -40,9 +41,7 @@ body {
     justify-content: space-between;
 }
 
-.product img {
-    width: 100%;
-}
+
 
 .product-content {
     padding: 1rem 2rem;
@@ -68,6 +67,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .add-to-cart {
@@ -97,6 +97,12 @@ body {
 #image{
     width:200px;
     height: 200px;
+}
+
+.jumbotron {
+    text-align: center;
+ 
+    
 }
 
 
