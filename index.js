@@ -1,7 +1,9 @@
 
-
 // Caching HTML elements
-const div = document.getElementById('brand');
+
+
+const porduct = document.getElementById('products')
+const brand = document.getElementById('brand');
 const image = document.getElementById('image');
 const title = document.getElementById('title');
 const price = document.getElementById('price');
@@ -11,7 +13,7 @@ const rating = document.getElementById('rating');
 const discountPercentage = document.getElementById('discount');
 
 
-function renerPhones(products){
+function renderPhones(products){
     products.forEach(products => {
       
         const div = document.getElementById('brand');
@@ -26,7 +28,7 @@ const discountPercentage = document.getElementById('discount');
 
            title.innerText = `title: ${products.title}`
            price.innerText = `price: ${products.price}`
-           category.innerText = `category: ${products.price}
+           category.innerText = `category: ${products.price}`
 
            div.appendChild(brand)
            div.appendChild(image)
@@ -42,54 +44,26 @@ const discountPercentage = document.getElementById('discount');
     });          
       
 };
-/*
+    
 
-function load (){
-    addEventListener(window.onload);
-      };
-  
-  const populatePhones = (data) => {
-    for (const products of products) {
-      const productCardHtml = 
-      <div class="row">
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <div class="product">
-                  
-                <img src="#">
-                <h2 class="product-title">${products.title}</h2>
-                <h3 class="product-brand"></h3>
-                <h4 class="product-category">${products.price}</h4>
-                <p class="product-description"></p>
-                <div class="product-price-container">
-                    <h3 class="product-price">$${products.price}</h3>
-                   <h3 class="product-discountPercentage"></h3>
-                </div>
-                </div>
-            </div>
-    </div>;
-  
-    mainPage.innerHTML += bookCardHtml;
+
+
+const fetchData = async () => {
+
+  try {
+
+    const response = await fetch('https://dummyjson.com/products');
+
+    const data = await response.json();
+
+    console.log(data);
+
+  } catch (error) {
+
+    console.log(error);
+
   }
-  
-
-
-
 
 };
-*/
 
-function getProducts() {
-fetch('https://dummyjson.com/products')
-
-    .then(response => response.json())
-
-    .then(data => console.log(data));
-
-}
-getProducts()
-
-function listProducts(productsPage){
-    document.getElementById('products-list');
-    }
+fetchData()
