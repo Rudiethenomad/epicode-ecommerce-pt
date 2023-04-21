@@ -12,7 +12,7 @@
       })
     
       .then(data => {
-        data.forEach(function(products){
+        data.forEach(products => {
           const markup = `        
           <div class="products">     
           <img id="image"src="${products.image}">
