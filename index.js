@@ -29,9 +29,11 @@
           <p id="product-description">${products.description}</p>
           <div id="product-price-container">
               <h3 id="product-price">$${products.price}</h3>
-           
+              <button>Add to Cart<button>
           </div>
+        
           </div>
+      
       </div>
       </div>
       </div>
