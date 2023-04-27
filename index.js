@@ -20,6 +20,7 @@
     })
       .then(products => {
         products.forEach(products => {
+          
           const markup = ` 
                  
           <div class="products">     
@@ -30,18 +31,18 @@
           <p id="product-description">${products.description}</p>
           <div id="product-price-container">
               <h3 id="product-price">$${products.price}</h3>
-              <button class="btn btn-danger my-cart-btn" "${$}"  "data-name="product 1" data-summary="summary 1"  data-image="images/img_1.png" >Add to Cart</button>
             
-          </div>
+              <button class="btn btn-danger my-cart-btn"  "data-name="product 1" data-summary="summary 1"  data-image="images/img_1.png" >Add to Cart</button>
+           
         
           </div>
-          
+      
       </div>
       </div>
       </div>
        `
      
- $(function () {
+ let shoppingCart = (function () {
    
         let goToCartIcon = function($addTocartBtn){
           let $cartIcon = $(".my-cart-icon");
@@ -75,7 +76,7 @@
           },
           getDiscountPrice: function(products, totalPrice, totalQuantity) {
             console.log("calculating discount", products, totalPrice, totalQuantity);
-            return totalPrice * 0.5;
+            return totalPrice ;
           }
         });
     
